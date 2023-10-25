@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-header {
+    background-color: #ff571e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color:#ff571e;
+    font-size: 4.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.nav-header .search-button {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 0.45em;
+}
+.nav-header .search-button .button-text-input {
+    width: 100%;
+    outline: none;
+    padding: 0.65em;
+    border: none;
+    border-radius: 0.45em;
+}
+.nav-header .search-button .button-text-input:focus {
+    background-color: #eee;
+}
+.nav-header .search-button .button-text-input:hover {
+    opacity: 0.95;
+    border: solid 1px #3b5998;
+}
+
+.sec-home {
+    height: 350px;
+    background-color: #ff571e;
+    padding-top: 2em;
+}
+
+.sec-home .cta-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.5em 3.5em;
+}
+
+.sec-home .cta-home .titulo {
+    font-size: 2.5em;
+    color: white;
+}
+
+.sec-home .cta-home ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding-top: 2em;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.sec-home .cta-home ul li {
+    margin-left: 3.5em;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 0.85em;
+    cursor: pointer;
+}
+
+.sec-home .cta-home ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.79em;
+    border-radius: 0.85em;
+    cursor: pointer;
+    
+}
+
+.sec-home .cta-home ul li a:focus {
+    background-color: #eee;
+}
+
+.sec-home .cta-home ul li a:hover {
+    opacity: 0.75;
+    background-color: #3b58983f;
+    border: solid 1px #3b5998;
+}
+
+.sec-home .cta-home ul li a .text {
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.sec-home .cta-home ul li a .imagen img {
+    width: 75px;
+    height: 100%;
+    padding: 0.25em;
+    cursor: pointer;
+}
+
+@media(max-width:1210px) {
+    .sec-home {
+        height: 380px;
+        padding-top: 1em;
+    }
+
+    .sec-home .cta-home {
+        padding: 4.5em 2em;
+    }
+}
+
+@media(max-width:830px) {
+
+    .sec-home {
+        padding-top: 2.5em;
+    }
+    .nav-header .search-button {
+        display: none;
+    }
+
+    .sec-home .cta-home ul li {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sec-home .cta-home ul li a {
+        padding: 0.48em;
+    }
+    .sec-home .cta-home ul li a .imagen img {
+        width: 42px;
+        padding: 0.48em;
+    }
+
+    .sec-home .cta-home ul li a .text {
+        font-size: 0.8em;
+    }
+}
+
+.wave-header {
+    width: 100%;
+    min-height: 20vh;
+    position: absolute;
+    pointer-events: none;
+}
+    
+.wave-header svg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sec-carrousel {
+    height: 450px;
+}
+
+
+
+
+.sec-modal-signup {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.7411764706);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s 0.9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.sec-modal-signup .modal-container {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 650px;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.sec-modal-signup .modal-container .modal-content {
+    padding: 1.5em 1em;
+
+}
+
+.sec-modal-signup .modal-container .modal-content .modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25em;
+}
+
+.sec-modal-signup .modal-container .modal-content .modal-title h2 {
+    font-size: 3rem;
+    align-self: center;
+}
+
+.sec-modal-signup .modal-container .modal-content .buttons {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2.35em;
+}
+
+.sec-modal-signup .modal-container .modal-content .buttons .google-btn {
+    background-color: #1A73EB;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.sec-modal-signup .modal-container .modal-content .buttons .google-btn:hover {
+    opacity: 0.75;
+}
+
+.sec-modal-signup .modal-container .modal-content .buttons .google-btn picture {
+    height: 36px;
+    width: 36px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-modal-signup .modal-container .modal-content .buttons .google-btn img {
+    width: 75%;
+}
+
+.sec-modal-signup .modal-container .modal-content .buttons .google-btn span {
+
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+
+}
+
+
+.sec-modal-signup .modal-container .modal-content .separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 2.45em;
+}
+
+.sec-modal-signup .modal-container .modal-content .separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.sec-modal-signup .modal-container .modal-content .separator span {
+    color: #8b8b8b;
+}
+
+.sec-modal-signup .modal-container .modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.sec-modal-signup .modal-container .modal-content form .section-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.sec-modal-signup .modal-container .modal-content form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec-modal-signup .modal-container .modal-content form label span {
+    font-weight: 700;
+}
+
+.sec-modal-signup .modal-container .modal-content form .section-inputs label input {
+    width: 100%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+.sec-modal-signup .modal-container .modal-content form label input {
+    width: 100%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.sec-modal-signup .modal-container .modal-content form label input:hover {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #3b5998;
+}
+
+.sec-modal-signup .modal-container .modal-content form label input:focus {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #3b5998;
+}
+
+.sec-modal-signup .modal-container .modal-content form .checkbox-label {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.55em;
+}
+
+.sec-modal-signup .modal-container .modal-content form .checkbox-label input[type=checkbox] {
+    width: 20px;
+}
+
+
+.sec-modal-signup .modal-container .modal-content form .checkbox-label span {
+    font-weight: 400;
+}
+
+.sec-modal-signup .modal-container .modal-content form .submit-btn {
+    background-color: #ff571e;
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 0.55em;
+}
+
+.sec-modal-signup .modal-container .modal-content form .submit-btn:hover {
+    opacity: 0.75;
+}
+
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.7411764706);
+    display: none; 
+}
+
+.sec-footer {
+    margin-top: 4.25em;
+    height: 350px;
+    background-color: #202020;
+    color: white;
+}
+.sec-footer .sec-footer-content {
+    padding: 4.35em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn-primary, .btn-primary-lg, .btn-primary-s {
+    border-radius: 0.85rem;
+    padding: 0.5rem 2.25rem;
+    cursor: pointer;
+    background-color: #3b5998;
+    border: solid 1px #3b5998;
+    color: white;
+}
+.btn-primary:hover, .btn-primary-lg:hover, .btn-primary-s:hover {
+    color: #3b5998;
+    background-color: white;
+}
+.btn-primary-s {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+.btn-primary-lg {
+    padding: 0.5rem 4.5rem;
+    cursor: pointer;
+}
+
+.btn-secundary, .btn-secundary-lg, .btn-secundary-s {
+    border-radius: 0.85rem;
+    padding: 0.5rem 2.25rem;
+    cursor: pointer;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}
+.btn-secundary:hover, .btn-secundary-lg:hover, .btn-secundary-s:hover {
+    color: #888;
+}
+
+.btn-secundary-s {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+.btn-secundary-lg {
+    padding: 0.5rem 4.5rem;
+    cursor: pointer;
+}
+
+.sec-footer {
+    margin-top: 4.25em;
+    height: 350px;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.derechos-reservados {
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+  
+.sec-footer .social-networks ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.5em 0 ;
+    margin-top: 0.25em;
+}
+  
+.sec-footer .social-networks ul li {
+    margin-left: 1em;
+}
+  
+.sec-footer .social-networks ul li a img {
+    width: 25px;
+}
+  
+  
+.sec-footer .sec-footer-content {
+    padding: 2.35em;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+  
+  
+.footer-info ul{
+    list-style: none;
+  
+}
+  
+.footer-info ul li {
+    margin-bottom: 2em;
+    text-align: center;
+}
+  
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}

@@ -1,0 +1,250 @@
+/*Declaracion de variables*/
+:root{
+    --botones: SansBold;
+    --color-texto-botones: rgb(0, 0, 0);
+    
+
+
+}
+
+/*Recetear los valores de la pagina*/
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+    font-family: SansMedium;
+}
+/*Font family*/
+
+/*font-family: 'DM Sans', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'DM Sans', sans-serif;
+
+/*Variables de fonts*/
+@font-face {
+    font-family: SansRegular;
+    src: url('../fonts/SansRegular.ttf');
+}
+@font-face {
+    font-family: SansBold;
+    src: url('../fonts/SansBold.ttf');
+}
+@font-face {
+    font-family: SansMedium;
+    src: url('../fonts/SansMedium.ttf');
+}
+@font-face {
+    font-family:SansItalic;
+    src: url('../fonts/DMSans-Italic.ttf')
+}
+
+/*NAV*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px 5px 5px 5px; 
+    background-color: #f08f18;
+    /*background-color: rgb(226, 244, 88);*/
+    background-blend-mode:color-burn;
+    background-size:contain; 
+    padding: 5px;
+    padding-top: 15px;
+    /*border-radius: 30px;*/
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.nombre-pag {
+    padding: 1px;
+    font-family: SansBold;
+    font-size:xx-large;
+    font-stretch: expanded;
+    color: rgb(241, 236, 236);
+    margin-top: 1px;
+} 
+#Express{
+    margin-top: 5px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 15px;
+}
+
+nav ul li a{
+    color: maroon;
+    text-decoration: none;
+}
+
+/*HEADER*/
+header{
+    /*background-image: url(../html/Imagenes/FONDO\ HEADERmas\ chico.png);*/
+    background-size: cover;
+    /* background-repeat: no-repeat;*/
+    /*border-radius: 50px;*/
+    border-style:unset; 
+    background-color: rgb(253, 163, 130);
+    opacity: 0.97;
+}
+
+.header-image{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border-color: rgb(246, 246, 13);
+    box-shadow: 10px;
+}
+
+h2{
+    margin-left: 20px;
+    margin-bottom: 5px;;
+}
+section div p a {
+    color: firebrick;
+    font-size: small;
+}
+.OfertasEnRestaurantes{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.cards{
+    border: 2px solid;
+    border-color: maroon;
+    border-radius: 5px;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    max-width: 500px;
+}
+
+section div h3{
+    display: flex;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+section div p {
+    color: darkorange;
+    font-weight: 700;
+}
+
+.promos{ 
+    display: flex;
+    justify-content:flex-start;
+    text-align: justify;
+    border-image: round;
+    border-radius: 3px solid;
+}
+
+h4{
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 3px;
+}
+
+#h44{
+    display: flex;
+    justify-content:first baseline;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-justify: distribute-all-lines;
+}
+
+.combos{
+    margin-left: 100px;
+    margin-inline: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    max-width: 250px;
+    border: 2px solid;
+    border-color: rgb(122, 119, 119);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+.combo2{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#combitos{
+    display: flex;
+    text-align: center;
+    
+}
+
+.precio{
+    display: flex;
+    font-weight: 800;
+    color: rgb(44, 53, 62);
+    align-items: center;
+    align-content: center;
+    font-size: large;
+    text-indent: 40px;
+    
+}
+.precio-tachado{
+    font-size:small;
+    color: rgb(44, 53, 62);
+    font-style: italic;
+    text-align: center;
+    text-decoration: line-through;
+    text-indent: 10px;
+}
+
+.descuento{
+    color: darkorange;
+    
+}
+
+.descripcion{
+    text-align:inherit;
+    color: rgb(44, 53, 62);
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color: #f08f18;
+    background-blend-mode:hard-light;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sec-footer-content{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+}
+footer section div img{
+    border-radius: 10px;
+    padding-top: 15px;
+}
+
+footer section div p {
+    color: rgb(222, 215, 215);
+}
+
