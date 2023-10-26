@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
+@font-face {
+    font-family: AntonRegular;
+    src: url('../assets/fonts/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: SansMedium;
+    src: url('../assets/fonts/SansMedium.ttf');
+}
+
+@font-face {
+    font-family: SansMedium;
+    src: url('../assets/fonts/SansBold.ttf');
+}
 
 * {
     padding: 0;
     margin: 0;
+    font-family: SansMedium;
 }
-
 
 .nav-header {
     background-color: #ff571e;
@@ -18,9 +32,8 @@
     z-index: 1;
 }
 
-.logo {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+.nav-header .logo {
+    font-family: 'AntonRegular';
     color:#ff571e;
     font-size: 4.5em;
     -webkit-text-stroke-width: 1px;
@@ -62,6 +75,7 @@
 }
 
 .sec-home .cta-home .titulo {
+    font-family: SansBold;
     font-size: 2.5em;
     color: white;
 }
@@ -111,7 +125,7 @@
 .sec-home .cta-home ul li a .text {
     text-align: center;
     padding: 0.5em 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     color: black;
     cursor: pointer;

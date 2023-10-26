@@ -1,10 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
+@font-face {
+  font-family: SansMedium;
+  src: url('../assets/fonts/SansMedium.ttf');
+}
+
+@font-face {
+  font-family: SansMedium;
+  src: url('../assets/fonts/SansBold.ttf');
+}
 
 * {
   padding: 0;
   margin: 0;
+  font-family: SansMedium;
 }
 
 
@@ -18,7 +28,7 @@
 }
 
 .logo {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 700;
   color:#ff571e;
   font-size: 4.5em;
@@ -53,6 +63,7 @@
 .sec-home .cta-home .cta-text .cta-title h1 {
   color: white;
   text-align: center;
+  font-family: SansBold;
   font-size: 3em;
   font-weight: 700;
 }
@@ -145,6 +156,7 @@
 }
 
 .sec-top-rest .cta-toprest .cta-title h2 {
+  font-family: SansBold;
   padding: 0.65rem;
   font-size: 2.5em;
   font-weight: 700;
@@ -406,6 +418,7 @@
 }
 
 .sec-modal-address .modal-address-container .modal-address-content .modal-title h2 {
+  font-family: SansBold;
   font-size: 2.5rem;
   align-self: center;
 }
@@ -459,6 +472,7 @@
 }
 
 .sec-modal-signup .modal-container .modal-content .modal-title h2 {
+  font-family: SansBold;
   font-size: 3rem;
   align-self: center;
 }
