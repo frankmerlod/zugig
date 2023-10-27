@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+@font-face {
+    font-family: AntonRegular;
+    src: url('../assets/fonts/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: SansMedium;
+    src: url('../assets/fonts/SansMedium.ttf');
+}
+
+@font-face {
+    font-family: SansBold;
+    src: url('../assets/fonts/SansBold.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: SansMedium;
+}
+
+.btn-primary, .btn-primary-lg, .btn-primary-s {
+    border-radius: 0.85rem;
+    padding: 0.5rem 2.25rem;
+    cursor: pointer;
+    background-color: #3b5998;
+    border: solid 1px #3b5998;
+    color: white;
+}
+.btn-primary:hover, .btn-primary-lg:hover, .btn-primary-s:hover {
+    color: #3b5998;
+    background-color: white;
+}
+.btn-primary-s {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+.btn-primary-lg {
+    padding: 0.5rem 4.5rem;
+    cursor: pointer;
+}
+
+.btn-secundary, .btn-secundary-lg, .btn-secundary-s {
+    border-radius: 0.85rem;
+    padding: 0.5rem 2.25rem;
+    cursor: pointer;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}
+.btn-secundary:hover, .btn-secundary-lg:hover, .btn-secundary-s:hover {
+    color: #888;
+}
+
+.btn-secundary-s {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+.btn-secundary-lg {
+    padding: 0.5rem 4.5rem;
+    cursor: pointer;
+}
+
+.nav-header {
+    background-color: #ff571e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 1.5em;
+}
+
+.nav-header .logo {
+    font-family: 'Inter';
+    padding: 3.5em 0;
+    font-weight: 700;
+    color:#ff571e;
+    font-size: 4.3em;
+    -webkit-text-stroke-width: 2.8px;
+    -webkit-text-stroke-color: white;
+}
+
+
+.nav-header .search-button {
+    display: flex;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 0.45em;
+}
+
+.nav-header .search-button img {
+    width: 30px;
+    padding: 0.1em 0.2em;
+}
+.nav-header .search-button .button-text-input {
+    width: 100%;
+    outline: none;
+    padding: 0.65em;
+    border: none;
+    border-radius: 0.45em 0 0 0.45em;
+}
+.nav-header .search-button .button-text-input:focus {
+    background-color: #eee;
+}
+
+
+.nav-header .search-button:hover {
+    opacity: 0.95;
+    border: solid 1px #3b5998;
+
+}
+
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: SansBold;
+}
+
+.menu-tab {
+    /*background-color: #ddd;*/
+    border: none;
+    color: #fff;
+    padding: 10px;
+    /*border-radius: 5px 5px 0 0;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-tab:hover {
+    cursor: pointer;
+}
+
+.username {
+    margin: 0;
+}
+
+.menu-tab img {
+    margin-right: 0.5em;
+    width: 1.5em;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    margin-left: 0.75em;
+}
+
+.menu-content {
+    display: none;
+    font-size: 0.75em;
+    background-color: #ff571e;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    /*border-radius: 0 0 5px 5px;*/
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.menu-item {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item img {
+    width: 1.7em;
+    margin-right: 0.5em;
+}
+.menu-item:hover {
+    opacity: 0.85;
+    background-color: #ddd;
+}
+
+.menu-dropdown:hover .menu-content {
+    display: block;
+}
+
+.sec-home {
+    height: 40px;
+    width: 100%;
+    background-color: #ff571e;
+}
+
+.wave-header {
+    width: 100%;
+    min-height: 5vh;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
+    
+.wave-header svg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.sec-restaurantes  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em 0 2.5em 0;
+    padding: 3em 0 4em 0;
+    z-index: -1;
+}
+
+.sec-restaurantes h1 {
+    font-family: SansBold;
+    font-size: 2.8em;
+    padding: 1em 0;
+    margin-bottom: 1.5em;
+    color: white;
+}
+
+
+.sec-restaurantes .restaurantes-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.restaurantes-container ul{
+    border-radius: 0.85em;
+    
+}
+.restaurantes-container ul li {
+    display: flex;
+    width: 250px;
+    height: 200px;
+    border: solid 1px #202020;
+    border-radius: 0.85em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
+    background-color: #ddd;
+}
+
+.restaurantes-container ul li:hover {
+    opacity: 0.85;
+    background-color: #eee;
+}
+
+
+.restaurantes-container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.imagen-rest {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.imagen-rest h3 {
+    color: black;
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    top: -0.5em;
+    left: 0.2em;
+    bottom: 0;
+    border-radius: 0.45em;
+    background-color: #ddd;
+}
+
+
+.imagen-rest img{
+    width: 250px;
+    height: 165px;
+    border-radius: 0.85em 0.85em 0 0;
+}
+
+
+.rest-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.likes, .delivery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.2em 0.1em;
+}
+
+.likes span {
+    font-size: 0.9em;
+    margin-right: 0.5em;
+}
+
+.delivery span{
+    font-size: 0.9em;
+    margin-right: 0.5em;
+}
+
+.likes img{
+    width: 20px;
+    margin-right: 0.2em;
+}
+
+.delivery img{
+    width: 20px;
+    margin-right: 0.2em;
+}
+
+
+.sugerencias {
+    display: flex;
+    flex-direction: column;
+}
+
+.sugerencias .titulo {
+    font-size: 2em;
+    padding: 0.8em 0;
+    font-family: SansBold;
+}
+
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.content ul li {
+    margin-top: 2em;
+}
+
+
+.promociones {
+    margin-top: 6.5em;
+}
+
+.promociones .titulo {
+    font-family: SansBold;
+    font-size: 2em;
+    padding: 0.8em 0;
+}
+
+.imagen-rest .descuentos {
+    color: #202020;
+    font-size: 1em;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 60px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.85em;
+    background-color: #ff571e;
+}
+
+.mas-pedidos {
+    margin-top: 6.5em;
+}
+
+.mas-pedidos .titulo {
+    font-family: SansBold;
+    font-size: 2em;
+    padding: 0.8em 0;
+}
+
+.todos-los-rest {
+    margin-top: 6.5em;
+}
+
+.todos-los-rest .titulo {
+    font-family: SansBold;
+    font-size: 2em;
+    padding: 0.8em 0;
+}
+
+.todos-los-rest ul li {
+    margin-bottom: 4.5em;
+}
+
+
+.sec-footer {
+    margin-top: 4.25em;
+    height: 350px;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.derechos-reservados {
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+  
+.sec-footer .social-networks ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.5em 0 ;
+    margin-top: 0.25em;
+}
+  
+.sec-footer .social-networks ul li {
+    margin-left: 1em;
+}
+  
+
+.sec-footer .social-networks ul li a:hover {
+    opacity: 0.75;
+}
+.sec-footer .social-networks ul li a img {
+    width: 25px;
+}
+  
+  
+.sec-footer .sec-footer-content {
+    padding: 2.35em;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+  
+  
+.footer-info ul{
+    list-style: none;
+  
+}
+  
+.footer-info ul li {
+    margin-bottom: 2em;
+    text-align: center;
+}
+  
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-info a:hover {
+    opacity: 0.75;
+}
+
+@media (max-width:1380px) {
+    .sec-restaurantes h1 {
+        padding: 0.5em 0;
+        margin-bottom: 1.2em;
+    }
+}
+
+@media (max-width:1245px) {
+    .sec-restaurantes h1 {
+        font-size: 2em;
+        padding: 0.5em 0;
+        margin-bottom: 1.2em;
+    }
+
+    .mas-pedidos, .todos-los-rest, .sugerencias, .promociones {
+        padding: 0 8em 0 8em;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content ul{
+        justify-content: center;
+        margin-left: 3.5em;
+    }
+
+}
+
+@media (max-width:1118px) {
+    .sec-restaurantes h1 {
+        font-size: 1.8em;
+        padding: 0.4em 0;
+    }
+    .mas-pedidos, .todos-los-rest, .sugerencias, .promociones {
+        padding: 0 6em 0 6em;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content ul{
+        justify-content: center;
+        margin-left: 3.5em;
+    }
+}
+
+@media (max-width:980px) {
+    .sec-restaurantes h1 {
+        font-size: 1.7em;
+        padding: 0.2em 0;
+    }
+
+}
+
+@media (max-width:895px) {
+    .sec-restaurantes h1 {
+        font-size: 1.6em;
+        padding: 0.12em 0;
+    }
+
+    .mas-pedidos, .todos-los-rest, .sugerencias, .promociones {
+        padding: 0 4em 0 4em;
+    }
+
+    .sec-footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:824px) {
+    .sec-restaurantes h1 {
+        opacity: 0;
+    }
+
+    .mas-pedidos, .todos-los-rest, .sugerencias, .promociones {
+        padding: 0 2em 0 2em;
+    }
+}

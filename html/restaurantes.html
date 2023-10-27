@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/restaurantes.css">
-    <title>TPO</title>
+    <title>Zugig</title>
 </head>
 <body>
     <header>
@@ -12,9 +12,27 @@
             <div class="search-button">
                 <label for="button-text-input"></label>
                 <input type="text" class="button-text-input" name="button-text-input" placeholder="Busca tu restaurante favorito"></input>
+                <img src="../assets/icons/lupa.png" alt="lupa">
             </div>
             <div class="btn-container">
-                <button class="btn-primary signUp">Empezar</button>
+                <div class="menu-dropdown ">
+                    <div class="menu-tab">
+                        <img src="../assets/icons/usuario-de-perfil.png" alt="Perfil">
+                        <span class="username" id="usernameSpan">Username</span>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-item">
+                            <img src="../assets/icons/carro-de-la-compra.png" alt="Carrito de compras">
+                            <span>Carrito de Compras</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../assets/icons/Soporte-tecnico.png" alt="Soporte tecnico">
+                            <span>Contactar a Soporte</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn-primary signUp">Empezar</button> -->
             </div>
         </nav>
     </header>
@@ -24,10 +42,10 @@
             
             <div class="cta-home">
 
-                <h2 class="titulo">Que necesitas?</h2>
+                <h2 class="titulo">¿Que vas a pedir hoy?</h2>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="./promos.html" id="promoLink">
                             
                             <div class="imagen">
                                 <img src="../assets/icons/comida-rapida-icon.png" alt="Restaurantes">
@@ -39,7 +57,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="./promos.html" id="promoLink"> 
                             
                             <div class="imagen">
                                 <img src="../assets/icons/carretilla.png" alt="Supermercados">
@@ -51,7 +69,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="./promos.html" id="promoLink">
                             
                             <div class="imagen">
                                 <img src="../assets/icons/farmacia.png" alt="Farmacias">
@@ -63,7 +81,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="./promos.html" id="promoLink">
                             
                             <div class="imagen">
                                 <img src="../assets/icons/dulces.png" alt="Kioscos">
@@ -75,7 +93,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="./promos.html" id="promoLink">
                             
                             <div class="imagen">
                                 <img src="../assets/icons/shopping.png" alt="Tiendas">
@@ -87,7 +105,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="./promos.html" id="promoLink">
                             
                             <div class="imagen">
                                 <img src="../assets/icons/entrega-de-paquetes.png" alt="Envios">

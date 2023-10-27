@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: SansMedium;
+    font-family: SansBold;
     src: url('../assets/fonts/SansBold.ttf');
 }
 
@@ -26,38 +26,126 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 5rem;
+    height: 7rem;
     width: 100%;
     position: fixed;
     z-index: 1;
 }
 
 .nav-header .logo {
-    font-family: 'AntonRegular';
+    font-family: 'Inter';
+    font-weight: 700;
     color:#ff571e;
-    font-size: 4.5em;
-    -webkit-text-stroke-width: 1px;
+    font-size: 4.3em;
+    -webkit-text-stroke-width: 2.8px;
     -webkit-text-stroke-color: white;
 }
 
 .nav-header .search-button {
+    display: flex;
     background-color: #fff;
     width: 400px;
     border-radius: 0.45em;
+}
+
+.nav-header .search-button img {
+    width: 30px;
+    padding: 0.1em 0.2em;
 }
 .nav-header .search-button .button-text-input {
     width: 100%;
     outline: none;
     padding: 0.65em;
     border: none;
-    border-radius: 0.45em;
+    border-radius: 0.45em 0 0 0.45em;
 }
 .nav-header .search-button .button-text-input:focus {
     background-color: #eee;
 }
-.nav-header .search-button .button-text-input:hover {
+
+
+.nav-header .search-button:hover {
     opacity: 0.95;
     border: solid 1px #3b5998;
+
+}
+
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: SansBold;
+}
+
+.menu-tab {
+    /*background-color: #ddd;*/
+    border: none;
+    color: #fff;
+    padding: 10px;
+    /*border-radius: 5px 5px 0 0;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-tab:hover {
+    cursor: pointer;
+}
+
+.username {
+    margin: 0;
+}
+
+.menu-tab img {
+    margin-right: 0.5em;
+    width: 1.5em;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    margin-left: 0.75em;
+}
+
+.menu-content {
+    display: none;
+    font-size: 0.75em;
+    background-color: #ff571e;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    /*border-radius: 0 0 5px 5px;*/
+    position: absolute;
+    width: 190px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.menu-item {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item img {
+    width: 1.7em;
+    margin-right: 0.5em;
+}
+.menu-item:hover {
+    opacity: 0.85;
+    background-color: #ddd;
+}
+
+.menu-dropdown:hover .menu-content {
+    display: block;
 }
 
 .sec-home {
@@ -76,7 +164,7 @@
 
 .sec-home .cta-home .titulo {
     font-family: SansBold;
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: white;
 }
 
@@ -141,7 +229,7 @@
 @media(max-width:1210px) {
     .sec-home {
         height: 380px;
-        padding-top: 1em;
+        padding-top: 3em;
     }
 
     .sec-home .cta-home {
@@ -164,7 +252,8 @@
     }
 
     .sec-home .cta-home ul li a {
-        padding: 0.48em;
+        font-size: 0.9em;
+        padding: 0.53em;
     }
     .sec-home .cta-home ul li a .imagen img {
         width: 42px;
@@ -172,6 +261,10 @@
     }
 
     .sec-home .cta-home ul li a .text {
+        font-size: 0.8em;
+    }
+
+    .sec-footer {
         font-size: 0.8em;
     }
 }
@@ -246,6 +339,7 @@
 }
 
 .sec-modal-signup .modal-container .modal-content .modal-title h2 {
+    font-family: SansBold;
     font-size: 3rem;
     align-self: center;
 }
@@ -506,6 +600,10 @@
     margin-left: 1em;
 }
   
+
+.sec-footer .social-networks ul li a:hover {
+    opacity: 0.75;
+}
 .sec-footer .social-networks ul li a img {
     width: 25px;
 }
@@ -533,4 +631,8 @@
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+}
+
+.footer-info a:hover {
+    opacity: 0.75;
 }

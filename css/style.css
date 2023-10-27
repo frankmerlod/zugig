@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: SansMedium;
+  font-family: SansBold;
   src: url('../assets/fonts/SansBold.ttf');
 }
 
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 5rem;
+  height: 7rem;
   width: 100%;
 }
 
@@ -31,8 +31,8 @@
   font-family: 'Inter';
   font-weight: 700;
   color:#ff571e;
-  font-size: 4.5em;
-  -webkit-text-stroke-width: 1px;
+  font-size: 4.3em;
+  -webkit-text-stroke-width: 2.8px;
   -webkit-text-stroke-color: white;
 }
 
@@ -62,10 +62,9 @@
 
 .sec-home .cta-home .cta-text .cta-title h1 {
   color: white;
-  text-align: center;
+  text-align: justify-all;
   font-family: SansBold;
   font-size: 3em;
-  font-weight: 700;
 }
 
 .sec-home .cta-home .cta-text .cta-title2 {
@@ -159,7 +158,6 @@
   font-family: SansBold;
   padding: 0.65rem;
   font-size: 2.5em;
-  font-weight: 700;
 
 }
 
@@ -267,7 +265,7 @@
 
 .sec-rest-action .cta-rest-action .cta-content .cta-img span {
   margin-top: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 400;
   text-align: center;
 }
@@ -678,6 +676,11 @@
   margin-left: 1em;
 }
 
+.sec-footer .social-networks ul li a:hover {
+  opacity: 0.75;
+}
+
+
 .sec-footer .social-networks ul li a img {
   width: 25px;
 }
@@ -705,6 +708,10 @@
   color: white;
   text-decoration: none;
   font-size: 1.1em;
+}
+
+.footer-info a:hover {
+  opacity: 0.75;
 }
 
 
@@ -834,6 +841,17 @@
   .sec-rest-action .cta-rest-action .cta-content .cta-img img {
     width: 125px;
   }
+
+  .sec-footer {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 840px) {
+  .sec-footer {
+    height: 300px;
+    margin-top: 6.8em;
+  }
 }
 
 @media (max-width: 756px) {
@@ -865,6 +883,7 @@
     height: 500px;
     padding: 0.3em 0;
   }
+
 }
 
 

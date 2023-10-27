@@ -1,0 +1,759 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zugig</title>
+    <link rel="stylesheet" href="../css/promos.css">
+</head>
+<body>
+    <script src="../js/index.js"></script>
+    <script src="../js/promos.js"></script>
+    <header>
+        <nav class="nav-header">
+            <div class="logo"><span>Zugig</span></div>
+            <div class="search-button">
+                <label for="button-text-input"></label>
+                <input type="text" class="button-text-input" name="button-text-input" placeholder="Busca tu restaurante favorito"></input>
+                <img src="../assets/icons/lupa.png" alt="lupa">
+            </div>
+            <div class="btn-container">
+                
+                <div class="menu-dropdown ">
+                    <div class="menu-tab">
+                        <img src="../assets/icons/usuario-de-perfil.png" alt="Perfil">
+                        <span class="username" id="usernameSpan">Username</span>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-item">
+                            <img src="../assets/icons/carro-de-la-compra.png" alt="Carrito de compras">
+                            <span>Carrito de Compras</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../assets/icons/Soporte-tecnico.png" alt="Soporte tecnico">
+                            <span>Contactar a Soporte</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn-primary signUp">Empezar</button> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="sec-home">
+        
+        </section>
+        <div class="wave-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff571e" fill-opacity="1" d="M0,160L120,170.7C240,181,480,203,720,202.7C960,203,1200,181,1320,170.7L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+        </div>
+        
+        <section class="sec-restaurantes">
+
+            <h1>Los mejores restaurantes de tu ciudad</h1>
+
+            <div class="restaurantes-container">
+                <div class="sugerencias">
+
+                    <h3 class="titulo">Sugerencias del dia</h3>
+
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                        <h3>McDonald's</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/pizza.jpg" alt="hamgurguesa">
+                                        <h3>Pizza Hut</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/pollofrito.avif" alt="hamgurguesa">
+                                        <h3>Arturo's</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/hamburguesa3.avif" alt="hamgurguesa">
+                                        <h3>Sirop Cafe</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="promociones">
+
+                    <h3 class="titulo">Promociones</h3>
+
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                        <h3>McDonald's</h3>
+                                        <h2 class="descuentos">-25%</h2>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/sushi.avif" alt="hamgurguesa">
+                                        <h3>Iroh Sushi</h3>
+                                        <h2 class="descuentos">-20%</h2>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/pastas.avif" alt="hamgurguesa">
+                                        <h3>Trattoria</h3>
+                                        <h2 class="descuentos">-30%</h2>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/restaurante-hamburguesas-plato_713888-468.avif" alt="hamgurguesa">
+                                        <h3>Sirop Cafe</h3>
+                                        <h2 class="descuentos">-19%</h2>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mas-pedidos">
+                    <h3 class="titulo">Restaurantes mas pedidos</h3>
+
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                        <h3>Burger King</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/pizza3.avif" alt="hamgurguesa">
+                                        <h3>Kentucky</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/pollofrito3.avif" alt="hamgurguesa">
+                                        <h3>KFC</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imagen-rest">
+                                        <img src="../assets/img/menus/parrilla2.avif" alt="hamgurguesa">
+                                        <h3>El barba</h3>
+                                    </div>
+                                    <div class="rest-info">
+                                        <div class="likes">
+                                            <img src="../assets/icons/me-gusta.png" alt="likes">
+                                            <span>89% (+500)</span>
+                                        <div class="delivery">
+                                            <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                            <span>$1.5</span>
+                                            <span>- 15 min</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+
+            <div class="todos-los-rest">
+                <h3 class="titulo">Todos los restaurantes</h3>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                    <h3>McDonald's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pizza.jpg" alt="hamgurguesa">
+                                    <h3>Pizza Hut</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pollofrito.avif" alt="hamgurguesa">
+                                    <h3>Arturo's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa3.avif" alt="hamgurguesa">
+                                    <h3>Sirop Cafe</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                    <h3>McDonald's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pizza.jpg" alt="hamgurguesa">
+                                    <h3>Pizza Hut</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pollofrito.avif" alt="hamgurguesa">
+                                    <h3>Arturo's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa3.avif" alt="hamgurguesa">
+                                    <h3>Sirop Cafe</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                    <h3>McDonald's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pizza.jpg" alt="hamgurguesa">
+                                    <h3>Pizza Hut</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pollofrito.avif" alt="hamgurguesa">
+                                    <h3>Arturo's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa3.avif" alt="hamgurguesa">
+                                    <h3>Sirop Cafe</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa2.avif" alt="hamgurguesa">
+                                    <h3>McDonald's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pizza.jpg" alt="hamgurguesa">
+                                    <h3>Pizza Hut</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/pollofrito.avif" alt="hamgurguesa">
+                                    <h3>Arturo's</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="imagen-rest">
+                                    <img src="../assets/img/menus/hamburguesa3.avif" alt="hamgurguesa">
+                                    <h3>Sirop Cafe</h3>
+                                </div>
+                                <div class="rest-info">
+                                    <div class="likes">
+                                        <img src="../assets/icons/me-gusta.png" alt="likes">
+                                        <span>89% (+500)</span>
+                                    <div class="delivery">
+                                        <img src="../assets/icons/repartidor-icon.png" alt="repartidor">
+                                        <span>$1.5</span>
+                                        <span>- 15 min</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="sec-footer"> 
+
+            <div class="social-networks">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icons/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icons/youtube.png" alt="Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="derechos-reservados">
+                <span>Derechos Reservados 2023</span>
+            </div>
+
+
+            <div class="sec-footer-content">
+
+                <div class="footer-info">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Quienes somos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Colabora con nosotros</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                    <div class="footer-info">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>Trabaja con nosotros</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Registra tu negocio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Centro de socios</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="footer-info">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Legal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Terminos y condiciones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Defensa al consumidor</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Top cadenas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Top ciudades</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Top comidas</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
