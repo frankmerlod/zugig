@@ -71,6 +71,7 @@
 }
 
 .menu-dropdown {
+    width: 200px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -120,7 +121,7 @@
     border-left: 1px solid black;
     /*border-radius: 0 0 5px 5px;*/
     position: absolute;
-    width: 190px;
+    width: 100%;
     top: 100%;
     left: 0;
     right: 0;

@@ -117,6 +117,7 @@
 }
 
 .menu-dropdown {
+    width: 200px;
     position: relative;
     display: inline-block;
     cursor: pointer;
