@@ -2,10 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/restaurantes.css">
     <title>Zugig</title>
+    <link rel="stylesheet" href="../css/formulario.css">
 </head>
 <body>
+    <script src="../js/index.js"></script>
+    <script src="../js/promos.js"></script>
     <header>
         <nav class="nav-header">
             <div class="logo"><span>Zugig</span></div>
@@ -15,6 +17,7 @@
                 <img src="../assets/icons/lupa.png" alt="lupa">
             </div>
             <div class="btn-container">
+                
                 <div class="menu-dropdown ">
                     <div class="menu-tab">
                         <img src="../assets/icons/usuario-de-perfil.png" alt="Perfil">
@@ -36,154 +39,74 @@
             </div>
         </nav>
     </header>
+
     <main>
 
         <section class="sec-home">
-            
-            <div class="cta-home">
-
-                <h2 class="titulo">¿Que vas a pedir hoy?</h2>
-                <ul>
-                    <li>
-                        <a href="./promos.html" id="promoLink">
-                            
-                            <div class="imagen">
-                                <img src="../assets/icons/comida-rapida-icon.png" alt="Restaurantes">
-                            </div>
-                            <div class="text">
-                                <span>Restaurantes</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./promos.html" id="promoLink"> 
-                            
-                            <div class="imagen">
-                                <img src="../assets/icons/carretilla.png" alt="Supermercados">
-                            </div>
-                            <div class="text">
-                                <span>Supermercados</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./promos.html" id="promoLink">
-                            
-                            <div class="imagen">
-                                <img src="../assets/icons/farmacia.png" alt="Farmacias">
-                            </div>
-                            <div class="text">
-                                <span>Farmacias</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./promos.html" id="promoLink">
-                            
-                            <div class="imagen">
-                                <img src="../assets/icons/dulces.png" alt="Kioscos">
-                            </div>
-                            <div class="text">
-                                <span>Kioscos</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./promos.html" id="promoLink">
-                            
-                            <div class="imagen">
-                                <img src="../assets/icons/shopping.png" alt="Tiendas">
-                            </div>
-                            <div class="text">
-                                <span>Tiendas</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./promos.html" id="promoLink">
-                            
-                            <div class="imagen">
-                                <img src="../assets/icons/entrega-de-paquetes.png" alt="Envios">
-                            </div>
-                            <div class="text">
-                                <span>Envios</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="wave-header">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff571e" fill-opacity="1" d="M0,160L120,170.7C240,181,480,203,720,202.7C960,203,1200,181,1320,170.7L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
-        </div>
-
-        <section class="sec-carrousel">
-
-            <div class="carrousel-container">
-
-            </div>
-        </section>
         
-    </main>
+        </section>
 
-    <section class="sec-modal-signup ">
-        <div class="modal-container">
-            <div class="modal-content">
-                <div class="modal-close"></div>
-                <div class="modal-title">
-                    <h2>Registrate aqui</h2>
-                </div>
-                <div class="buttons">
-                    <button class="google-btn">
-                        <picture>
-                            <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" alt="Logo Google">
-                        </picture>
-                        <span>Registrate con Google</span>
-                    </button>
-                </div>
-                <div class="separator">
-                    <hr>
-                    <span>Or</span>
-                    <hr>
-                </div>
-                <form action="#" method="GET">
-
-
-                    <div class="section-inputs">
-                        <label for="name">
-                            <span>Name</span>
-                            <input id="name" name="name" autocomplete="name">
-                        </label>
-                        <label for="username">
-                            <span>Username</span>
-                            <input id="username" name="username" autocomplete="username">
-                        </label>
-                        <label for="email">
-                            <span>Email</span>
-                            <input id="email" name="email" autocomplete="email">
-                        </label>
-                        <label for="password">
-                            <span>Password</span>
-                            <input id="password" name="password" type="password" placeholder="6+ caracteres" autocomplete="current-password">
-                        </label>
-                        <label for="checkbox" class="checkbox-label">
-                            <input type="checkbox" name="checkbox" id="checkbox" >
-                            <span>Acepto los terminos y condiciones de uso</span>
-                        </label>
-                        
+        <!-- <div class="wave-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff571e" fill-opacity="1" d="M0,160L120,170.7C240,181,480,203,720,202.7C960,203,1200,181,1320,170.7L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+        </div> -->
+        
+        <section class="sec-formulario">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="form-title">
+                        <h2>Formulario de contacto</h2>
                     </div>
-                    <button type="submit" class="submit-btn">Crear cuenta</button>
+                    <div class="separator">
+                        <hr>
 
-                </form>
+                        <hr>
+                    </div>
+                    <form action="#" method="GET" id="contacForm">
+                        <div class="section-inputs">
+                            <label for="name">
+                                <span>Name</span>
+                                <input id="name" name="name" autocomplete="name">
+                            </label>
+                            <label for="username">
+                                <span>Username</span>
+                                <input id="username" name="username" autocomplete="username">
+                            </label>
+                            <label for="email">
+                                <span>Email</span>
+                                <input id="email" name="email" autocomplete="email">
+                            </label>
+
+                            <label for="message">
+                                <span>Comentarios</span>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </label>
+
+                            <label for="checkbox" class="checkbox-label">
+                                <input type="checkbox" name="checkbox" id="checkbox" >
+                                <span>Acepto los terminos y condiciones de uso</span>
+                            </label>
+                            
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar</button>
+    
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section-maps>
+            <div class="maps-container">
+                <div class="quienes-somos">
+                    <h3>Nuestra empresa</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque deserunt eum illo ea necessitatibus impedit porro voluptatibus, nam, fuga dolores nesciunt voluptates perferendis magnam quibusdam nisi dolore dolor mollitia quas at. Libero tempora sit nesciunt aliquid officia laudantium magni, sunt temporibus quibusdam esse ratione veniam laborum aperiam quas eius quo.
+                    </span>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888186313!2d-58.384145323503425!3d-34.60373445750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1699829584509!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section-maps>
+    </main>
 
     <footer>
         <section class="sec-footer"> 
@@ -301,7 +224,6 @@
             
         </section>
     </footer>
-
-    <script src="../js/index.js"></script>
+    <script src="../js/contacto.js"></script>
 </body>
 </html>
