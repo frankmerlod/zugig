@@ -76,7 +76,8 @@
     margin-bottom: 1.5em;
 }
 
-.nav-header .logo {
+.nav-header .logo a{
+    text-decoration: none;
     font-family: 'Inter';
     padding: 3.5em 0;
     font-weight: 700;
